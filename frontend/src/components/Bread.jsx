@@ -51,7 +51,7 @@ export default function Bread() {
             fresh bread and food <span className="text-[#1a533e]">for you</span>
           </motion.h2>
           <motion.p variants={reveal} className="mt-6 text-base sm:text-lg leading-relaxed text-[#0c2e24]/85 max-w-md">
-            Warm naan pulled straight from the clay oven, shelves stacked with the flavours of home. Come hungry, leave happy.
+            many bread options straight from the oven, packed to go and to savour.
           </motion.p>
           <motion.div variants={reveal} className="mt-9">
             <span
