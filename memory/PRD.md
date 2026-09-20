@@ -26,8 +26,9 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - Slow editorial marquee ribbon (emerald, diamond separators)
 - Bread showcase: cleanly cropped naan photo, hover zoom, "grab it, bag it, go!" kinetic badge, freshness stamp
 - Aisles bento (4 numbered cards: hearth, halal butcher, produce, pantry) — REPLACED 2026-07 with HMC meat section below
-- HMC butcher section: "we have a lot of meat options" + "certified with HMC" copy, hand-drawn circular HMC badge (SVG stand-in logo), meat option chips (lamb, chicken, goat & mince, kebab cuts)
-- Hero readability pass: stronger emerald scrims + text shadows on headline/eyebrow
+- HMC butcher section: "we have a lot of meat options" + "certified with HMC" copy, meat option chips (lamb, chicken, goat & mince, kebab cuts); drawn HMC logo removed per user request
+- Opening hours updated to 7:00 – Midnight every day
+- Readability pass: removed italic flourishes from headings, raised body text contrast, stronger hero scrim
 - Visit section: big serif address, open-hours status pill, transit info, Copy Address + Get Directions (Google Maps dir link)
 - Footer dedication "Made with love by a proud kid, for dad"
 - Sticky glass nav with directions CTA; grain texture; lenis momentum scroll

@@ -42,7 +42,7 @@ export default function Visit() {
             <span className="pulse-dot absolute inline-flex h-full w-full rounded-full bg-[#1a533e]" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-[#1a533e]" />
           </span>
-          <span className="font-meta text-[10px] uppercase tracking-[0.2em] text-[#0c2e24]">Open every day · 8:00 – 21:30</span>
+          <span className="font-meta text-[10px] uppercase tracking-[0.2em] text-[#0c2e24]">Open every day · 7:00 – Midnight</span>
         </motion.div>
 
         <motion.h2
@@ -53,7 +53,7 @@ export default function Visit() {
           data-testid="store-address-text"
           className="font-display font-bold text-[#0c2e24] tracking-tight leading-[1.08] text-3xl sm:text-5xl lg:text-6xl"
         >
-          775 High Rd, <span className="italic text-[#ba2d2d]">N12 8JY</span>,
+          775 High Rd, <span className="text-[#ba2d2d]">N12 8JY</span>,
           <br className="hidden sm:block" /> North Finchley
         </motion.h2>
 

@@ -42,7 +42,7 @@ export default function Hero() {
           {LINES.map((line, i) => (
             <span key={line} className="block overflow-hidden pb-1">
               <motion.span
-                className={`block ${i === 1 ? "italic text-[#e39832]" : ""}`}
+                className={`block ${i === 1 ? "text-[#e39832]" : ""}`}
                 initial={{ y: "115%" }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.55 + i * 0.18, duration: 1, ease: [0.22, 1, 0.36, 1] }}

@@ -48,15 +48,15 @@ export default function Bread() {
             data-testid="bread-heading-fresh-bread"
             className="font-display font-bold text-[#0c2e24] tracking-tight leading-[1.05] text-4xl sm:text-5xl lg:text-6xl"
           >
-            fresh bread and food <span className="italic text-[#1a533e]">for you</span>
+            fresh bread and food <span className="text-[#1a533e]">for you</span>
           </motion.h2>
-          <motion.p variants={reveal} className="mt-6 text-base sm:text-lg leading-relaxed text-[#0c2e24]/70 max-w-md">
+          <motion.p variants={reveal} className="mt-6 text-base sm:text-lg leading-relaxed text-[#0c2e24]/85 max-w-md">
             Warm naan pulled straight from the clay oven, shelves stacked with the flavours of home. Come hungry, leave happy.
           </motion.p>
           <motion.div variants={reveal} className="mt-9">
             <span
               data-testid="bread-subtext-grab-it-bag-it-go"
-              className="inline-flex items-center gap-3 rounded-full bg-[#ba2d2d] px-7 py-4 font-display italic text-xl sm:text-2xl text-[#faf7f2] shadow-lg shadow-[#9e2a2b]/30 rotate-[-2deg] transition-transform duration-300 hover:rotate-0 hover:scale-105"
+              className="inline-flex items-center gap-3 rounded-full bg-[#ba2d2d] px-7 py-4 font-display text-xl sm:text-2xl text-[#faf7f2] shadow-lg shadow-[#9e2a2b]/30 rotate-[-2deg] transition-transform duration-300 hover:rotate-0 hover:scale-105"
             >
               <Wheat size={20} />
               grab it, bag it, go!
