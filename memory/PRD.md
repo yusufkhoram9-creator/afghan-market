@@ -25,7 +25,9 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - Kinetic hero: parallax storefront photo, masked line-by-line headline reveal, badges, directions pill
 - Slow editorial marquee ribbon (emerald, diamond separators)
 - Bread showcase: cleanly cropped naan photo, hover zoom, "grab it, bag it, go!" kinetic badge, freshness stamp
-- Aisles bento (4 numbered cards: hearth, halal butcher, produce, pantry)
+- Aisles bento (4 numbered cards: hearth, halal butcher, produce, pantry) — REPLACED 2026-07 with HMC meat section below
+- HMC butcher section: "we have a lot of meat options" + "certified with HMC" copy, hand-drawn circular HMC badge (SVG stand-in logo), meat option chips (lamb, chicken, goat & mince, kebab cuts)
+- Hero readability pass: stronger emerald scrims + text shadows on headline/eyebrow
 - Visit section: big serif address, open-hours status pill, transit info, Copy Address + Get Directions (Google Maps dir link)
 - Footer dedication "Made with love by a proud kid, for dad"
 - Sticky glass nav with directions CTA; grain texture; lenis momentum scroll

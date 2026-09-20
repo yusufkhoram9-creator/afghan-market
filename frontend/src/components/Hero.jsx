@@ -20,15 +20,16 @@ export default function Hero() {
         style={{ y: imgY, scale: imgScale }}
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0c2e24] via-[#0c2e24]/45 to-[#0c2e24]/25" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0c2e24]/70 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0c2e24] via-[#0c2e24]/70 to-[#0c2e24]/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0c2e24]/85 via-[#0c2e24]/30 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-[#0c2e24]/95 to-transparent" />
 
       <div className="relative z-10 flex h-full flex-col justify-end px-5 sm:px-10 pb-14 sm:pb-20">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="font-meta text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#e39832] mb-4 sm:mb-6"
+          className="font-meta text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#e39832] mb-4 sm:mb-6 [text-shadow:0_1px_12px_rgba(12,46,36,0.9)]"
           data-testid="hero-eyebrow"
         >
           01 — The Shopfront · High Road, North Finchley
@@ -36,7 +37,7 @@ export default function Hero() {
 
         <h1
           data-testid="hero-heading-afghan-market"
-          className="font-display font-black text-[#faf7f2] leading-[0.98] tracking-tight text-5xl sm:text-7xl lg:text-8xl"
+          className="font-display font-black text-[#faf7f2] leading-[0.98] tracking-tight text-5xl sm:text-7xl lg:text-8xl [text-shadow:0_3px_28px_rgba(12,46,36,0.95)]"
         >
           {LINES.map((line, i) => (
             <span key={line} className="block overflow-hidden pb-1">

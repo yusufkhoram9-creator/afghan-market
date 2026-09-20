@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Ribbon from "@/components/Ribbon";
 import Bread from "@/components/Bread";
-import Aisles from "@/components/Aisles";
+import HalalMeat from "@/components/HalalMeat";
 import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
 
@@ -31,7 +31,7 @@ function App() {
       <Hero />
       <Ribbon />
       <Bread />
-      <Aisles />
+      <HalalMeat />
       <Visit />
       <Footer />
     </div>
