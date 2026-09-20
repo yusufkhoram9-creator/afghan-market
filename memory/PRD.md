@@ -26,8 +26,8 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - Slow editorial marquee ribbon (emerald, diamond separators)
 - Bread showcase: cleanly cropped naan photo, hover zoom, "grab it, bag it, go!" kinetic badge, freshness stamp
 - Aisles bento (4 numbered cards: hearth, halal butcher, produce, pantry) — REPLACED 2026-07 with HMC meat section below
-- HMC butcher section: "we have a lot of meat options" + "certified with HMC" copy, meat option chips (lamb, chicken, goat & mince, kebab cuts); drawn HMC logo removed per user request
-- Opening hours updated to 7:00 – Midnight every day
+- HMC butcher section: "we have a lot of meat options" + "certified with HMC" copy, meat option chips (lamb, chicken, goat & mince, "and many more!"); drawn HMC logo removed per user request
+- Opening hours 7:00 – Midnight every day; live Open/Closed badge auto-switches on Europe/London time (checks every minute)
 - Readability pass: removed italic flourishes from headings, raised body text contrast, stronger hero scrim
 - Visit section: big serif address, open-hours status pill, transit info, Copy Address + Get Directions (Google Maps dir link)
 - Footer dedication "Made with love by a proud kid, for dad"
@@ -35,10 +35,10 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 
 ## Backlog
 - P0: none
-- P1: real opening hours confirmation from dad; opening-hours auto open/closed status
+- P1: meat counter photos (user sending tomorrow) — add to butcher section
 - P2: photo gallery of the shop, product/price highlights, multilingual toggle (English/Dari/Pashto), Instagram link
 
 ## Next Tasks
-- Confirm exact opening hours
+- Add meat counter photos when provided
 - Add more real shop photos if provided
 - Custom domain when ready to publish

@@ -1,10 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Check, Copy, MapPin, Train, Bus } from "lucide-react";
 import { ADDRESS, MAPS_URL } from "@/constants";
 
+const isShopOpen = () => {
+  const hour = Number(
+    new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", hour: "numeric", hour12: false }).format(new Date())
+  );
+  return hour >= 7 && hour < 24;
+};
+
 export default function Visit() {
   const [copied, setCopied] = useState(false);
+  const [open, setOpen] = useState(isShopOpen());
+
+  useEffect(() => {
+    const timer = setInterval(() => setOpen(isShopOpen()), 60000);
+    return () => clearInterval(timer);
+  }, []);
 
   const copyAddress = async () => {
     try {
@@ -35,14 +48,18 @@ export default function Visit() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="inline-flex items-center gap-2 rounded-full border border-[#1a533e]/25 bg-white px-5 py-2 mb-8"
+          className={`inline-flex items-center gap-2 rounded-full border px-5 py-2 mb-8 ${
+            open ? "border-[#1a533e]/25 bg-white" : "border-[#9e2a2b]/30 bg-white"
+          }`}
           data-testid="store-status-badge"
         >
           <span className="relative flex h-2 w-2">
-            <span className="pulse-dot absolute inline-flex h-full w-full rounded-full bg-[#1a533e]" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#1a533e]" />
+            <span className={`pulse-dot absolute inline-flex h-full w-full rounded-full ${open ? "bg-[#1a533e]" : "bg-[#ba2d2d]"}`} />
+            <span className={`relative inline-flex h-2 w-2 rounded-full ${open ? "bg-[#1a533e]" : "bg-[#ba2d2d]"}`} />
           </span>
-          <span className="font-meta text-[10px] uppercase tracking-[0.2em] text-[#0c2e24]">Open every day · 7:00 – Midnight</span>
+          <span className="font-meta text-[10px] uppercase tracking-[0.2em] text-[#0c2e24]">
+            {open ? "Open now · 7:00 – Midnight" : "Closed · Opens at 7:00 AM"}
+          </span>
         </motion.div>
 
         <motion.h2

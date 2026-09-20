@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Beef, Drumstick, Slice, ChefHat } from "lucide-react";
+import { Beef, Drumstick, Slice, Sparkles } from "lucide-react";
 
 const MEATS = [
   { icon: Beef, label: "Fresh Lamb" },
   { icon: Drumstick, label: "Chicken" },
   { icon: Slice, label: "Goat & Mince" },
-  { icon: ChefHat, label: "Kebab Cuts" },
+  { icon: Sparkles, label: "and many more!" },
 ];
 
 export default function HalalMeat() {
