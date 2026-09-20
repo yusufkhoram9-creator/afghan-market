@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Flame, Wheat } from "lucide-react";
+import StickmanRunner from "@/components/Stickman";
 
 const reveal = {
   hidden: { opacity: 0, y: 40 },
@@ -7,6 +9,8 @@ const reveal = {
 };
 
 export default function Bread() {
+  const [stickman, setStickman] = useState(false);
+
   return (
     <section data-testid="bread-section" className="relative bg-[#faf7f2] px-5 sm:px-10 py-20 sm:py-32 overflow-hidden">
       <div className="mx-auto max-w-6xl grid gap-12 lg:grid-cols-2 lg:items-center">
@@ -54,16 +58,19 @@ export default function Bread() {
             many bread options straight from the oven, packed to go and to savour.
           </motion.p>
           <motion.div variants={reveal} className="mt-9">
-            <span
+            <button
+              type="button"
+              onClick={() => !stickman && setStickman(true)}
               data-testid="bread-subtext-grab-it-bag-it-go"
-              className="inline-flex items-center gap-3 rounded-full bg-[#ba2d2d] px-7 py-4 font-display text-xl sm:text-2xl text-[#faf7f2] shadow-lg shadow-[#9e2a2b]/30 rotate-[-2deg] transition-transform duration-300 hover:rotate-0 hover:scale-105"
+              className="inline-flex items-center gap-3 rounded-full bg-[#ba2d2d] px-7 py-4 font-display text-xl sm:text-2xl text-[#faf7f2] shadow-lg shadow-[#9e2a2b]/30 rotate-[-2deg] transition-transform duration-300 hover:rotate-0 hover:scale-105 cursor-pointer"
             >
               <Wheat size={20} />
               grab it, bag it, go!
-            </span>
+            </button>
           </motion.div>
         </motion.div>
       </div>
+      {stickman && <StickmanRunner onDone={() => setStickman(false)} />}
     </section>
   );
 }

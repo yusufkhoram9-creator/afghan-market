@@ -76,6 +76,65 @@ body {
     }
 }
 
+@keyframes leg-swing {
+    0%, 100% {
+        transform: rotate(16deg);
+    }
+    50% {
+        transform: rotate(-16deg);
+    }
+}
+
+.stick-leg {
+    transform-origin: 40px 62px;
+    animation: leg-swing 0.45s ease-in-out infinite;
+}
+
+.stick-leg.back {
+    animation-delay: 0.225s;
+}
+
+@keyframes arm-swing {
+    0%, 100% {
+        transform: rotate(-12deg);
+    }
+    50% {
+        transform: rotate(12deg);
+    }
+}
+
+.stick-arm.back {
+    transform-origin: 40px 34px;
+    animation: arm-swing 0.45s ease-in-out infinite;
+}
+
+@keyframes stick-bob-anim {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.stick-bob {
+    animation: stick-bob-anim 0.45s ease-in-out infinite;
+}
+
+@keyframes wave-arm {
+    0%, 100% {
+        transform: rotate(-14deg);
+    }
+    50% {
+        transform: rotate(14deg);
+    }
+}
+
+.stick-wave {
+    transform-origin: 40px 34px;
+    animation: wave-arm 0.4s ease-in-out infinite;
+}
+
 .pulse-dot {
     animation: pulse-dot 1.8s ease-in-out infinite;
 }

@@ -32,6 +32,7 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - Visit section: big serif address, open-hours status pill, transit info, Copy Address + Get Directions (Google Maps dir link)
 - Footer dedication "Made with love by a proud kid, for dad"
 - Sticky glass nav with directions CTA; grain texture; lenis momentum scroll
+- Easter egg: clicking "grab it, bag it, go!" summons an animated stickman carrying a white bag of cow meat — he walks across the screen, returns, waves, then leaves
 
 ## Backlog
 - P0: none
