@@ -1,0 +1,141 @@
+{
+  "project_name": "Afghan Market - North Finchley London",
+  "archetype": "Warm Heritage Grocery & Artisan Bazaar (Custom fusion: Rich Emerald Pine #0F382A, Crimson Velvet #9E2A2B, Saffron Ochre #D9822B, Warm Sesame Cream #F9F6EE)",
+  "vibe": "Awwwards Site-of-the-Day tier local merchant love letter. Genuinely warm market feel, kinetic typography, editorial manifesto chapters, tactile bread showcase with phone screenshot frame cropped cleanly to the golden tandoor crumb, interactive Google Maps card with live status & walking distance calculator.",
+  "target_audience": "North Finchley community, North London food lovers, Asian & Afghan diaspora looking for authentic tandoori flatbread, fresh halal meat, and market groceries, travelers along High Road N12.",
+  "typography": {
+    "heading_font": "Playfair Display or Bodoni Moda or Cormorant Garamond / Cabinet Grotesk style display serif via Google Fonts",
+    "body_font": "IBM Plex Sans or Plus Jakarta Sans",
+    "mono_accent_font": "JetBrains Mono / monospace for metadata, coordinates, stamps, and live opening tags",
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap",
+    "scale": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-serif font-black tracking-tight leading-[1.05]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-serif font-bold tracking-tight leading-tight",
+      "manifesto_quote": "text-xl sm:text-2xl lg:text-3xl font-serif italic text-emerald-950 dark:text-emerald-100",
+      "tagline": "text-base sm:text-lg uppercase tracking-[0.25em] font-mono",
+      "body": "text-sm sm:text-base leading-relaxed text-stone-700 dark:text-stone-300",
+      "caption": "text-xs font-mono uppercase tracking-widest text-stone-500"
+    }
+  },
+  "color_palette": {
+    "primary_dark_emerald": "#0C2E24",
+    "emerald_accent": "#1A533E",
+    "crimson_red": "#9E2A2B",
+    "bright_crimson": "#BA2D2D",
+    "saffron_gold": "#E39832",
+    "warm_cream_bg": "#FAF7F2",
+    "parchment_card": "#FFFFFF",
+    "dark_obsidian_surface": "#121815",
+    "border_tint": "rgba(26, 83, 62, 0.15)",
+    "rules": [
+      "DO NOT use generic blue SaaS gradients or purples.",
+      "Root in the real Afghan Market storefront sign colors: deep forest emerald green, vibrant cherry crimson red, and warm golden yellow accents.",
+      "Keep text contrast at APCA > 60 / WCAG AAA (>7:1) using ivory on dark green and dark charcoal on ivory."
+    ]
+  },
+  "key_sections": [
+    {
+      "id": "hero",
+      "name": "Kinetic Hero: The Heart of High Road",
+      "required_text": "afghan market the best fresh food",
+      "required_image": "storefront photo of Afghan Market (halal Asian grocery on High Road, North Finchley, London)",
+      "design_execution": "Split visual architectural hero: dynamic ticker marquee 'FRESH EVERY MORNING • HALAL SPECIALITIES • TANDOORI FLATBREAD • HIGH ROAD N12', masked line-by-line reveal for headline 'afghan market the best fresh food', interactive badge 'Family Run Since 2020 • North Finchley', quick action pills (Get Directions, Today's Bake, Store Hours). Background features an authentic London grocery storefront with deep emerald vignette and grain overlay."
+    },
+    {
+      "id": "marquee_ribbon",
+      "name": "The Editorial Ribbon (Marquee)",
+      "content": "AFGHAN MARKET • FRESH NAAN DAILY • 775 HIGH RD FINCHLEY • HALAL Asian GROCERY • TANDOOR OVEN HOT • GRAB IT BAG IT GO • WELCOME HOME",
+      "design_execution": "Slow organic drift marquee with serif typography, separated by diamond emblems and tandoor fire icons."
+    },
+    {
+      "id": "fresh_bread_manifesto",
+      "name": "Tandoor Showcase & Manifesto: Grab It, Bag It, Go!",
+      "required_text": "fresh bread and food for you",
+      "required_subtext": "grab it, bag it, go!",
+      "required_image": "fresh Afghan bread / naan with smartphone screenshot aesthetic cropped cleanly so only the golden blistered bread shines",
+      "design_execution": "Spotlight gallery with visual crop frame toggle: Shows the authentic freshly baked Afghan bread / naan straight out of the clay tandoor. A luxury 'phone capture' frame cleanly cropped with interactive zoom-inspect, golden hour glow, steam particle effect, and interactive 'Freshness Guarantee' timer ('Last batch baked: 14 mins ago'). Prominent typography: 'fresh bread and food for you' (H2 serif) and bold kinetic badge 'grab it, bag it, go!'."
+    },
+    {
+      "id": "aisles_and_specialities",
+      "name": "Bento of Aisles: What Dad Stocks Everyday",
+      "features": [
+        "Aisle 1: The Hearth (Tandoori Afghan Naan, Roghani & Lavash)",
+        "Aisle 2: Halal Master Butcher (Fresh cut lamb, poultry & spices)",
+        "Aisle 3: Sunlight Produce (Seasonal herbs, pomegranates, figs & greens)",
+        "Aisle 4: Pantry of the Silk Road (Basmati sella, dried mulberries, saffron & tea)"
+      ]
+    },
+    {
+      "id": "visit_and_directions",
+      "name": "Location & Directions Command Card",
+      "required_address": "775 High Rd, N12 8JY, North Finchley",
+      "required_action": "Button leading to Google Maps directions to dad's shop",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=775+High+Rd+North+Finchley+London+N12+8JY+Afghan+Market",
+      "design_execution": "Immersive London Transit Card with live status pill ('Open Today 08:00 – 21:00 • Welcoming You Now'), distance estimator from Finchley Central & Woodside Park stations (Northern Line), interactive copy-address button, direct 1-click 'Get Directions' Google Maps CTA with external icon and pulse dot."
+    },
+    {
+      "id": "family_tribute",
+      "name": "Dedications & Story Card",
+      "content": "Built with love by a proud kid for dad and the North Finchley neighborhood. The soul of our diaspora in every warm loaf of bread."
+    }
+  ],
+  "image_urls": {
+    "storefront_hero": "https://images.unsplash.com/photo-1608994109782-8ae17bcf6bf9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxncm9jZXJ5JTIwc3RvcmVmcm9udCUyMGxvbmRvbnxlbnwwfHx8fDE3ODk5MjkyOTR8MA&ixlib=rb-4.1.0&q=85",
+    "storefront_alt_exterior": "https://images.unsplash.com/photo-1657283559125-fead1ac22e01?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHw0fHxncm9jZXJ5JTIwc3RvcmVmcm9udCUyMGxvbmRvbnxlbnwwfHx8fDE3ODk5MjkyOTR8MA&ixlib=rb-4.1.0&q=85",
+    "bread_tandoor_main": "https://images.unsplash.com/photo-1655979284091-eea0e93405ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxmbGF0YnJlYWQlMjBuYWFuJTIwdGFuZG9vcnxlbnwwfHx8fDE3ODk5MjkyOTR8MA&ixlib=rb-4.1.0&q=85",
+    "bread_tandoor_fire": "https://images.pexels.com/photos/33556462/pexels-photo-33556462.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "bread_tandoor_baking": "https://images.pexels.com/photos/34938525/pexels-photo-34938525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "spices_silk_road": "https://images.unsplash.com/flagged/photo-1553617569-8ef7a8da3146?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMGhlcmJzJTIwc3BpY2VzJTIwbWFya2V0fGVufDB8fHx8MTc4OTkyOTI5NHww&ixlib=rb-4.1.0&q=85",
+    "fresh_produce_market": "https://images.unsplash.com/photo-1687199129802-3e4cc27baac0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG1hcmtldCUyMHZlZ2V0YWJsZXMlMjBzdGFsbHxlbnwwfHx8fDE3ODk5MjkzMDR8MA&ixlib=rb-4.1.0&q=85",
+    "night_street_ambience": "https://images.pexels.com/photos/15460720/pexels-photo-15460720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "interactive_components": {
+    "header": {
+      "type": "Crystal Glass Sticky Nav",
+      "items": ["Our Food", "Fresh Bread", "Aisles", "Find Us & Directions"],
+      "action_cta": "Directions (N12 8JY)"
+    },
+    "bread_crop_treatment": {
+      "description": "Clean phone-camera frame crop simulation with toggle: Users can view the bread with clean spotlight cropping (removing any phone screenshot chrome as requested in user choices: 'crop it so only the bread shows') with subtle steam animation and golden bake metadata.",
+      "required_crop_style": "object-cover aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl border border-stone-200 dark:border-stone-800"
+    },
+    "quick_order_cart_or_bag_it": {
+      "description": "Interactive 'Grab & Bag Simulator' where users can tap fresh bread types (Khandahari Naan, Tandoori Lavash, Sweet Roghani) and see a warm bag fill up with the freshly baked loaves."
+    },
+    "transit_directions_card": {
+      "address_line": "775 High Rd, N12 8JY, North Finchley, London",
+      "coordinates_badge": "51.6163° N, 0.1764° W",
+      "tubes": ["Woodside Park (0.6 mi)", "West Finchley (0.8 mi)"],
+      "buses": ["125", "134", "221", "263", "460 (High Road / North Finchley stop)"],
+      "opening_hours": "Mon - Sun: 8:00 AM - 9:30 PM"
+    }
+  },
+  "test_ids": {
+    "hero_section": "hero-section",
+    "hero_heading": "hero-heading-afghan-market",
+    "hero_storefront_img": "hero-storefront-image",
+    "bread_section": "bread-section",
+    "bread_heading": "bread-heading-fresh-bread",
+    "bread_subtext": "bread-subtext-grab-it-bag-it-go",
+    "bread_image": "bread-photo-naan",
+    "address_section": "address-section",
+    "address_text": "store-address-text",
+    "get_directions_button": "get-directions-google-maps-btn",
+    "copy_address_button": "copy-address-button",
+    "bag_it_interactive_btn": "bag-it-interactive-btn",
+    "store_status_badge": "store-status-badge"
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": {
+    "do_not_use_inter_for_headings": true,
+    "use_motion": "framer-motion with staggerChildren, hover lifts, line reveal",
+    "spacing": "Generous p-8 to p-24, deep emerald and crimson color palette matching traditional market canopies and spices",
+    "test_attributes": "Every key element must have data-testid matching test_ids above",
+    "clean_crop_rule": "Ensure the bread image is strictly cropped to the bakery item itself with overflow-hidden and object-cover, omitting any smartphone UI borders",
+    "exact_copy_matches": [
+      "afghan market the best fresh food",
+      "fresh bread and food for you",
+      "grab it, bag it, go!",
+      "775 High Rd, N12 8JY, North Finchley"
+    ]
+  }
+}

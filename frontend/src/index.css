@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --emerald: #0c2e24;
+    --emerald-soft: #1a533e;
+    --crimson: #9e2a2b;
+    --crimson-bright: #ba2d2d;
+    --saffron: #e39832;
+    --cream: #faf7f2;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--emerald);
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+    font-family: 'Bodoni Moda', serif;
+}
+
+.font-meta {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+::selection {
+    background: var(--crimson);
+    color: var(--cream);
+}
+
+.grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.09;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+    mix-blend-mode: overlay;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 46s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes pulse-dot {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.9);
+        opacity: 0.35;
+    }
+}
+
+.pulse-dot {
+    animation: pulse-dot 1.8s ease-in-out infinite;
+}
