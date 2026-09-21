@@ -46,5 +46,6 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 
 ## Next Tasks
 - Add meat counter photos when provided
-- Add more real shop photos if provided
+- Netlify export prepared: /app/afghan-market-netlify.zip (drag onto netlify.com/drop for free hosting)
+- Emergent-managed Google sign-in was requested then paused by user — parked (needs backend + deployment anyway)
 - Custom domain when ready to publish
