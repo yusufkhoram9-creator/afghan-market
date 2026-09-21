@@ -37,6 +37,7 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - Hero photo swapped to the new fruit & veg stall photo (current signage) per user request
 - Language switcher: "🗣 language" button in nav — 10 languages (English, Farsi, Arabic, Urdu, Hindi, Punjabi, Gujarati, Bengali, Tamil, Telugu) via hand-written dictionary in src/i18n.js, RTL support for Farsi/Arabic/Urdu; chosen language persists across visits via localStorage
 - Bigger Text mode: "A+" toggle in nav scales all text 25% larger, persists via localStorage
+- Mobile/tablet optimisation: nav compacts on small screens (icon-only directions, no logo wrap), language menu capped to screen width, no horizontal overflow at 390px/768px
 
 ## Backlog
 - P0: none
