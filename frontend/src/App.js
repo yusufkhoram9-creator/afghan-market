@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Ribbon from "@/components/Ribbon";
 import Bread from "@/components/Bread";
 import HalalMeat from "@/components/HalalMeat";
+import Gallery from "@/components/Gallery";
 import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
 
@@ -32,6 +33,7 @@ function App() {
       <Ribbon />
       <Bread />
       <HalalMeat />
+      <Gallery />
       <Visit />
       <Footer />
     </div>

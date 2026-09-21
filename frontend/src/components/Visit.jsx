@@ -40,7 +40,7 @@ export default function Visit() {
           className="font-meta text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#9e2a2b] mb-5"
           data-testid="visit-eyebrow"
         >
-          04 — Find Us
+          05 — Find Us
         </motion.p>
 
         <motion.div
