@@ -10,19 +10,11 @@ const PHOTOS = [
     ratio: "aspect-[16/10]",
   },
   {
-    src: "/images/storefront.jpg",
-    alt: "Afghan Market storefront on High Road",
-    caption: "The shopfront on High Road",
-    testid: "gallery-img-storefront",
-    span: "",
-    ratio: "aspect-[4/3]",
-  },
-  {
     src: "/images/bread.jpg",
     alt: "Fresh Afghan naan bread",
     caption: "Naan straight from the tandoor",
     testid: "gallery-img-bread",
-    span: "",
+    span: "sm:col-span-2 sm:max-w-xl sm:mx-auto sm:w-full",
     ratio: "aspect-[4/3]",
   },
 ];
