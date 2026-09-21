@@ -13,7 +13,7 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - framer-motion (masked line reveal, scroll reveals, parallax hero), lenis smooth scrolling
 - Fonts: Bodoni Moda (display), IBM Plex Sans (body), JetBrains Mono (meta)
 - Palette: deep emerald #0C2E24, crimson #BA2D2D, saffron #E39832, cream #FAF7F2
-- User photos served from /app/frontend/public/images/ (bread screenshot cropped to remove phone UI)
+- User photos served from /app/frontend/public/images/ (bread screenshot cropped to remove phone UI; storefront photo has all visible faces blurred for privacy)
 - Design spec: /app/design_guidelines.json
 
 ## Core Requirements (static)
