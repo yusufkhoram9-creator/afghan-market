@@ -35,7 +35,7 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - Easter egg: clicking "grab it, bag it, go!" summons an animated stickman carrying a white bag of cow meat — he walks across the screen, returns, waves, then leaves
 - Gallery section "04 — The Shop In Pictures": 10 user photos (fruit & veg stall featured, aisle, butcher counter, chicken, lamb, chops & beef, freezer, till sweets, pantry wall, naan) with lightbox: prev/next arrows, keyboard arrows, counter, Esc/backdrop close; faces blurred; Visit renumbered to 05
 - Hero photo swapped to the new fruit & veg stall photo (current signage) per user request
-- Language switcher: "🗣 language" button in nav — 10 languages (English, Farsi, Arabic, Urdu, Hindi, Punjabi, Gujarati, Bengali, Tamil, Telugu) via hand-written dictionary in src/i18n.js, RTL support for Farsi/Arabic/Urdu
+- Language switcher: "🗣 language" button in nav — 10 languages (English, Farsi, Arabic, Urdu, Hindi, Punjabi, Gujarati, Bengali, Tamil, Telugu) via hand-written dictionary in src/i18n.js, RTL support for Farsi/Arabic/Urdu; chosen language persists across visits via localStorage
 
 ## Backlog
 - P0: none

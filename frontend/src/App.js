@@ -12,7 +12,7 @@ import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
 
 function App() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(() => localStorage.getItem("afghan-market-lang") || "en");
   const t = (key) => STR[key]?.[lang] ?? STR[key]?.en ?? key;
 
   useEffect(() => {
@@ -31,6 +31,7 @@ function App() {
   }, []);
 
   useEffect(() => {
+    localStorage.setItem("afghan-market-lang", lang);
     document.documentElement.dir = RTL_LANGS.includes(lang) ? "rtl" : "ltr";
     document.documentElement.lang = lang;
   }, [lang]);
