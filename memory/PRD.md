@@ -33,7 +33,8 @@ A son built a website for his dad's shop "Afghan Market" (halal Asian grocery, 7
 - Footer dedication "Made with love by a proud kid, for dad"
 - Sticky glass nav with directions CTA; grain texture; lenis momentum scroll
 - Easter egg: clicking "grab it, bag it, go!" summons an animated stickman carrying a white bag of cow meat — he walks across the screen, returns, waves, then leaves
-- Gallery section "04 — The Shop In Pictures": featured fruit & veg stall photo (user-sent, face blurred) + naan; old-sign storefront photo removed from gallery per user request (hero still uses it); Visit renumbered to 05
+- Gallery section "04 — The Shop In Pictures": 7 user photos (fruit & veg stall featured, aisle interior, butcher counter x3, freezer aisle, naan) with tap-to-open lightbox (fullscreen, close button, Esc/backdrop close); faces blurred in aisle shots; old-sign storefront removed per user request; Visit renumbered to 05
+- Hero photo swapped to the new fruit & veg stall photo (current signage) per user request
 
 ## Backlog
 - P0: none

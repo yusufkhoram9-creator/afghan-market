@@ -14,8 +14,8 @@ export default function Hero() {
   return (
     <section ref={ref} id="top" data-testid="hero-section" className="grain relative h-[100svh] overflow-hidden bg-[#0c2e24]">
       <motion.img
-        src="/images/storefront.jpg"
-        alt="Afghan Market storefront on High Road, North Finchley"
+        src="/images/fruit_stand.jpg"
+        alt="Afghan Market fruit and veg stall on High Road, North Finchley"
         data-testid="hero-storefront-image"
         style={{ y: imgY, scale: imgScale }}
         className="absolute inset-0 h-full w-full object-cover"
