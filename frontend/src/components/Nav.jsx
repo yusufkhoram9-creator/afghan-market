@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { MAPS_URL } from "@/constants";
@@ -7,6 +7,12 @@ import { LangContext, LANGS } from "@/i18n";
 export default function Nav() {
   const { lang, setLang, t } = useContext(LangContext);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [bigText, setBigText] = useState(() => localStorage.getItem("afghan-market-big-text") === "1");
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("big-text", bigText);
+    localStorage.setItem("afghan-market-big-text", bigText ? "1" : "0");
+  }, [bigText]);
 
   return (
     <motion.header
@@ -21,6 +27,21 @@ export default function Nav() {
         <span className="font-meta text-[10px] uppercase tracking-[0.25em] text-[#e39832]">N12</span>
       </a>
       <div className="flex items-center gap-3">
+        <button
+          type="button"
+          onClick={() => setBigText(!bigText)}
+          data-testid="bigger-text-button"
+          aria-pressed={bigText}
+          aria-label="Toggle bigger text"
+          title="Bigger text"
+          className={`rounded-full border px-4 py-2 font-meta text-[11px] tracking-[0.1em] transition-colors duration-300 ${
+            bigText
+              ? "border-[#e39832] bg-[#e39832] text-[#0c2e24]"
+              : "border-[#faf7f2]/30 text-[#faf7f2] hover:border-[#e39832] hover:text-[#e39832]"
+          }`}
+        >
+          A<span className="text-sm font-bold align-top">+</span>
+        </button>
         <div className="relative">
           <button
             type="button"

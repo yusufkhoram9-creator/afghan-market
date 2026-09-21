@@ -17,6 +17,10 @@ html {
     scroll-behavior: auto;
 }
 
+html.big-text {
+    font-size: 125%;
+}
+
 body {
     margin: 0;
     background: var(--cream);
