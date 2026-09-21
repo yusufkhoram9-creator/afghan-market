@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import "@/App.css";
+import { LangContext, RTL_LANGS, STR } from "@/i18n";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Ribbon from "@/components/Ribbon";
@@ -11,6 +12,9 @@ import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
 
 function App() {
+  const [lang, setLang] = useState("en");
+  const t = (key) => STR[key]?.[lang] ?? STR[key]?.en ?? key;
+
   useEffect(() => {
     document.title = "Afghan Market — The Best Fresh Food · North Finchley";
     const lenis = new Lenis({ lerp: 0.09 });
@@ -26,17 +30,24 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    document.documentElement.dir = RTL_LANGS.includes(lang) ? "rtl" : "ltr";
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   return (
-    <div className="App">
-      <Nav />
-      <Hero />
-      <Ribbon />
-      <Bread />
-      <HalalMeat />
-      <Gallery />
-      <Visit />
-      <Footer />
-    </div>
+    <LangContext.Provider value={{ lang, setLang, t }}>
+      <div className="App">
+        <Nav />
+        <Hero />
+        <Ribbon />
+        <Bread />
+        <HalalMeat />
+        <Gallery />
+        <Visit />
+        <Footer />
+      </div>
+    </LangContext.Provider>
   );
 }
 

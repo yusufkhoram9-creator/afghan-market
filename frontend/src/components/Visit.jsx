@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Check, Copy, MapPin, Train, Bus } from "lucide-react";
 import { ADDRESS, MAPS_URL } from "@/constants";
+import { LangContext } from "@/i18n";
 
 const isShopOpen = () => {
   const hour = Number(
@@ -13,6 +14,7 @@ const isShopOpen = () => {
 export default function Visit() {
   const [copied, setCopied] = useState(false);
   const [open, setOpen] = useState(isShopOpen());
+  const { t } = useContext(LangContext);
 
   useEffect(() => {
     const timer = setInterval(() => setOpen(isShopOpen()), 60000);
@@ -40,7 +42,7 @@ export default function Visit() {
           className="font-meta text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#9e2a2b] mb-5"
           data-testid="visit-eyebrow"
         >
-          05 — Find Us
+          {t("visitEyebrow")}
         </motion.p>
 
         <motion.div
@@ -58,7 +60,7 @@ export default function Visit() {
             <span className={`relative inline-flex h-2 w-2 rounded-full ${open ? "bg-[#1a533e]" : "bg-[#ba2d2d]"}`} />
           </span>
           <span className="font-meta text-[10px] uppercase tracking-[0.2em] text-[#0c2e24]">
-            {open ? "Open now · 7:00 – Midnight" : "Closed · Opens at 7:00 AM"}
+            {open ? t("statusOpen") : t("statusClosed")}
           </span>
         </motion.div>
 
@@ -101,7 +103,7 @@ export default function Visit() {
             className="group flex items-center gap-3 rounded-full bg-[#ba2d2d] px-9 py-5 font-meta text-xs uppercase tracking-[0.25em] text-[#faf7f2] shadow-xl shadow-[#9e2a2b]/30 transition-all duration-300 hover:bg-[#9e2a2b] hover:shadow-2xl hover:-translate-y-0.5"
           >
             <MapPin size={16} className="transition-transform duration-300 group-hover:scale-125" />
-            Get Directions
+            {t("getDirections")}
           </a>
           <button
             onClick={copyAddress}
@@ -109,7 +111,7 @@ export default function Visit() {
             className="flex items-center gap-2 rounded-full border border-[#0c2e24]/25 px-7 py-5 font-meta text-xs uppercase tracking-[0.25em] text-[#0c2e24] transition-colors duration-300 hover:border-[#0c2e24] hover:bg-[#0c2e24] hover:text-[#faf7f2]"
           >
             {copied ? <Check size={15} /> : <Copy size={15} />}
-            {copied ? "Copied!" : "Copy Address"}
+            {copied ? t("copied") : t("copyAddress")}
           </button>
         </motion.div>
       </div>

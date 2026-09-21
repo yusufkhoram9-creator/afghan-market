@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { Flame, Wheat } from "lucide-react";
 import StickmanRunner from "@/components/Stickman";
+import { LangContext } from "@/i18n";
 
 const reveal = {
   hidden: { opacity: 0, y: 40 },
@@ -10,6 +11,7 @@ const reveal = {
 
 export default function Bread() {
   const [stickman, setStickman] = useState(false);
+  const { t } = useContext(LangContext);
 
   return (
     <section data-testid="bread-section" className="relative bg-[#faf7f2] px-5 sm:px-10 py-20 sm:py-32 overflow-hidden">
@@ -33,7 +35,7 @@ export default function Bread() {
           </div>
           <div className="absolute -bottom-5 -right-3 sm:-right-6 rotate-[-4deg] rounded-xl bg-[#0c2e24] px-5 py-3 shadow-xl" data-testid="bread-freshness-stamp">
             <p className="font-meta text-[10px] uppercase tracking-[0.25em] text-[#e39832] flex items-center gap-2">
-              <Flame size={12} /> Baked fresh every morning
+              <Flame size={12} /> {t("freshStamp")}
             </p>
           </div>
         </motion.div>
@@ -45,17 +47,17 @@ export default function Bread() {
           viewport={{ once: true, margin: "-80px" }}
         >
           <motion.p variants={reveal} className="font-meta text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#9e2a2b] mb-5" data-testid="bread-eyebrow">
-            02 — Fresh From The Tandoor
+            {t("breadEyebrow")}
           </motion.p>
           <motion.h2
             variants={reveal}
             data-testid="bread-heading-fresh-bread"
             className="font-display font-bold text-[#0c2e24] tracking-tight leading-[1.05] text-4xl sm:text-5xl lg:text-6xl"
           >
-            fresh bread and food <span className="text-[#1a533e]">for you</span>
+            {t("breadHeading")}
           </motion.h2>
           <motion.p variants={reveal} className="mt-6 text-base sm:text-lg leading-relaxed text-[#0c2e24]/85 max-w-md">
-            many bread options straight from the oven, packed to go and to savour.
+            {t("breadSub")}
           </motion.p>
           <motion.div variants={reveal} className="mt-9">
             <button
@@ -65,7 +67,7 @@ export default function Bread() {
               className="inline-flex items-center gap-3 rounded-full bg-[#ba2d2d] px-7 py-4 font-display text-xl sm:text-2xl text-[#faf7f2] shadow-lg shadow-[#9e2a2b]/30 rotate-[-2deg] transition-transform duration-300 hover:rotate-0 hover:scale-105 cursor-pointer"
             >
               <Wheat size={20} />
-              grab it, bag it, go!
+              {t("grabBadge")}
             </button>
           </motion.div>
         </motion.div>

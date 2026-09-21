@@ -1,15 +1,20 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, MapPin } from "lucide-react";
 import { MAPS_URL } from "@/constants";
-
-const LINES = ["afghan market", "the best fresh food"];
+import { LangContext } from "@/i18n";
 
 export default function Hero() {
+  const { t } = useContext(LangContext);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
   const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
+
+  const lines = [
+    { text: t("heroLine1"), accent: false },
+    { text: t("heroLine2"), accent: true },
+  ];
 
   return (
     <section ref={ref} id="top" data-testid="hero-section" className="grain relative h-[100svh] overflow-hidden bg-[#0c2e24]">
@@ -32,22 +37,22 @@ export default function Hero() {
           className="font-meta text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#e39832] mb-4 sm:mb-6 [text-shadow:0_1px_12px_rgba(12,46,36,0.9)]"
           data-testid="hero-eyebrow"
         >
-          01 — The Shopfront · High Road, North Finchley
+          {t("heroEyebrow")}
         </motion.p>
 
         <h1
           data-testid="hero-heading-afghan-market"
           className="font-display font-black text-[#faf7f2] leading-[0.98] tracking-tight text-5xl sm:text-7xl lg:text-8xl [text-shadow:0_3px_28px_rgba(12,46,36,0.95)]"
         >
-          {LINES.map((line, i) => (
-            <span key={line} className="block overflow-hidden pb-1">
+          {lines.map((line, i) => (
+            <span key={`${line.text}-${i}`} className="block overflow-hidden pb-1">
               <motion.span
-                className={`block ${i === 1 ? "text-[#e39832]" : ""}`}
+                className={`block ${line.accent ? "text-[#e39832]" : ""}`}
                 initial={{ y: "115%" }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.55 + i * 0.18, duration: 1, ease: [0.22, 1, 0.36, 1] }}
               >
-                {line}
+                {line.text}
               </motion.span>
             </span>
           ))}
@@ -67,10 +72,10 @@ export default function Hero() {
             className="group flex items-center gap-2 rounded-full bg-[#faf7f2] px-6 py-3 font-meta text-[11px] uppercase tracking-[0.2em] text-[#0c2e24] transition-colors duration-300 hover:bg-[#e39832]"
           >
             <MapPin size={14} className="transition-transform duration-300 group-hover:rotate-12" />
-            Get Directions
+            {t("getDirections")}
           </a>
           <span className="font-meta text-[10px] uppercase tracking-[0.25em] text-[#faf7f2]/70 border border-[#faf7f2]/25 rounded-full px-5 py-3" data-testid="hero-halal-badge">
-            Halal · Bakery · Groceries
+            {t("heroBadge")}
           </span>
         </motion.div>
       </div>

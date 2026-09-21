@@ -1,14 +1,18 @@
+import { useContext } from "react";
 import { motion } from "framer-motion";
 import { Beef, Drumstick, Slice, Sparkles } from "lucide-react";
+import { LangContext } from "@/i18n";
 
 const MEATS = [
-  { icon: Beef, label: "Fresh Lamb" },
-  { icon: Drumstick, label: "Chicken" },
-  { icon: Slice, label: "Goat & Mince" },
-  { icon: Sparkles, label: "and many more!" },
+  { icon: Beef, key: "chipLamb", testid: "meat-tag-lamb" },
+  { icon: Drumstick, key: "chipChicken", testid: "meat-tag-chicken" },
+  { icon: Slice, key: "chipGoat", testid: "meat-tag-goat-mince" },
+  { icon: Sparkles, key: "chipMore", testid: "meat-tag-many-more" },
 ];
 
 export default function HalalMeat() {
+  const { t } = useContext(LangContext);
+
   return (
     <section data-testid="meat-section" className="grain relative bg-[#0c2e24] px-5 sm:px-10 py-20 sm:py-32">
       <div className="mx-auto max-w-6xl">
@@ -20,7 +24,7 @@ export default function HalalMeat() {
           className="font-meta text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#e39832] mb-5"
           data-testid="meat-eyebrow"
         >
-          03 — The Butcher Counter
+          {t("meatEyebrow")}
         </motion.p>
 
         <div>
@@ -33,7 +37,7 @@ export default function HalalMeat() {
               className="font-display font-bold text-[#faf7f2] tracking-tight leading-[1.08] text-3xl sm:text-5xl"
               data-testid="meat-heading"
             >
-              we have a lot of <span className="text-[#e39832]">meat options</span>
+              {t("meatHeading")}
             </motion.h2>
 
             <motion.p
@@ -44,7 +48,7 @@ export default function HalalMeat() {
               className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-[#faf7f2]/85"
               data-testid="hmc-certified-text"
             >
-              and we are certified with <span className="font-semibold text-[#faf7f2]">HMC</span> — every cut is fresh, halal and prepared with care at our counter.
+              {t("meatBody")}
             </motion.p>
 
             <motion.div
@@ -56,12 +60,12 @@ export default function HalalMeat() {
             >
               {MEATS.map((m) => (
                 <span
-                  key={m.label}
-                  data-testid={`meat-tag-${m.label.toLowerCase().replace(/[^a-z]+/g, "-")}`}
+                  key={m.key}
+                  data-testid={m.testid}
                   className="flex items-center gap-2 rounded-full border border-[#faf7f2]/15 bg-[#1a533e]/40 px-5 py-2.5 font-meta text-[11px] uppercase tracking-[0.2em] text-[#faf7f2]/85 transition-colors duration-300 hover:border-[#e39832]/60"
                 >
                   <m.icon size={14} className="text-[#e39832]" />
-                  {m.label}
+                  {t(m.key)}
                 </span>
               ))}
             </motion.div>
